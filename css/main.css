@@ -18,10 +18,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #222;
-  --highlight-foreground: #c0c0c0;
-  --highlight-gutter-background: #313131;
-  --highlight-gutter-foreground: #b0b0b0;
+  --highlight-background: #fefefe;
+  --highlight-foreground: #545454;
+  --highlight-gutter-background: #ededed;
+  --highlight-gutter-foreground: #656565;
   color-scheme: light;
 }
 html {
@@ -373,69 +373,91 @@ pre code.hljs {
 code.hljs {
   padding: 3px 5px
 }
-/*
+/*!
+  Theme: a11y-light
+  Author: @ericwbailey
+  Maintainer: @ericwbailey
 
-GML Theme - Meseta <meseta@gmail.com>
-
+  Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css
 */
 .hljs {
-  background: #222222;
-  color: #C0C0C0
+  background: #fefefe;
+  color: #545454
 }
-.hljs-keyword {
-  color: #FFB871;
-  font-weight: bold
+/* Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #696969
 }
-.hljs-built_in {
-  color: #FFB871
-}
-.hljs-literal {
-  color: #FF8080
-}
-.hljs-symbol {
-  color: #58E55A
-}
-.hljs-comment {
-  color: #5B995B
-}
-.hljs-string {
-  color: #FFFF00
-}
-.hljs-number {
-  color: #FF8080
-}
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-doctag,
-.hljs-name,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition,
-.hljs-regexp,
+/* Red */
 .hljs-variable,
 .hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-type,
+.hljs-tag,
+.hljs-name,
 .hljs-selector-id,
 .hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
-.hljs-deletion,
-.hljs-title,
-.hljs-section,
-.hljs-function,
-.hljs-meta .hljs-keyword,
+.hljs-regexp,
+.hljs-deletion {
+  color: #d91e18
+}
+/* Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
 .hljs-meta,
-.hljs-subst {
-  color: #C0C0C0
+.hljs-link {
+  color: #aa5d00
+}
+/* Yellow */
+.hljs-attribute {
+  color: #aa5d00
+}
+/* Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #008000
+}
+/* Blue */
+.hljs-title,
+.hljs-section {
+  color: #007faa
+}
+/* Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #7928a1
 }
 .hljs-emphasis {
   font-style: italic
 }
 .hljs-strong {
   font-weight: bold
+}
+@media screen and (-ms-high-contrast: active) {
+  .hljs-addition,
+  .hljs-attribute,
+  .hljs-built_in,
+  .hljs-bullet,
+  .hljs-comment,
+  .hljs-link,
+  .hljs-literal,
+  .hljs-meta,
+  .hljs-number,
+  .hljs-params,
+  .hljs-string,
+  .hljs-symbol,
+  .hljs-type,
+  .hljs-quote {
+    color: highlight
+  }
+  .hljs-keyword,
+  .hljs-selector-tag {
+    font-weight: bold
+  }
 }
 .highlight:hover .copy-btn,
 .code-container:hover .copy-btn {
