@@ -120,7 +120,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -162,6 +162,102 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://estyzx.github.io/2024/12/08/luogu-P1303/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="EstyZhong">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YuanFang的路">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | YuanFang的路">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/12/08/luogu-P1303/" class="post-title-link" itemprop="url">A*B Problem</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-12-08 21:18:59" itemprop="dateCreated datePublished" datetime="2024-12-08T21:18:59+08:00">2024-12-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-12-12 19:32:54" itemprop="dateModified" datetime="2024-12-12T19:32:54+08:00">2024-12-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%B4%9B%E8%B0%B7%E5%88%B7%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">洛谷刷题</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="A-B-Problem"><a href="#A-B-Problem" class="headerlink" title="A*B Problem"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1303">A*B Problem</a></h1><h2 id="题目背景"><a href="#题目背景" class="headerlink" title="题目背景"></a>题目背景</h2><p>高精度乘法模板题。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给出两个非负整数，求它们的乘积。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入共两行，每行一个非负整数。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出一个非负整数表示乘积。</p>
+<h2 id="样例-1"><a href="#样例-1" class="headerlink" title="样例 #1"></a>样例 #1</h2><h3 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入 #1"></a>样例输入 #1</h3><figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">1 </span></span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出 #1"></a>样例输出 #1</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>每个非负整数不超过 <code>10^&#123;2000&#125;</code>。</p>
+<hr>
+<h1 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h1><h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">input</span>()</span><br><span class="line">b = <span class="built_in">input</span>()</span><br><span class="line">a = <span class="built_in">int</span>(a)</span><br><span class="line">b = <span class="built_in">int</span>(b)</span><br><span class="line"><span class="built_in">print</span>(a * b)</span><br></pre></td></tr></table></figure>
+
+<h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    string s1;</span><br><span class="line">    cin&gt;&gt;s1;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;a;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>;i&lt;s<span class="number">1.</span><span class="built_in">size</span>();i++) &#123;</span><br><span class="line">        a.<span class="built_in">push_back</span>(s1[i]-<span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    string s2;</span><br><span class="line">    cin&gt;&gt;s2;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;b;</span><br><span class="line">    <span class="type">int</span> h = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>;i&lt;s<span class="number">2.</span><span class="built_in">size</span>();i++) &#123;</span><br><span class="line">        b.<span class="built_in">push_back</span>(s2[i]-<span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> t = <span class="number">0</span>;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;c;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = a.<span class="built_in">size</span>()<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--) &#123;</span><br><span class="line">        <span class="type">int</span> q = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = b.<span class="built_in">size</span>()<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--,q++) &#123;</span><br><span class="line">            <span class="type">int</span> temp = a[i] * b[j]+t;</span><br><span class="line">            t = temp/<span class="number">10</span>;</span><br><span class="line">            <span class="keyword">if</span> (c.<span class="built_in">size</span>()&gt;q+h) &#123;</span><br><span class="line">                <span class="type">int</span> t1 = temp%<span class="number">10</span>+c[q+h];</span><br><span class="line">                c[q+h] = t1%<span class="number">10</span>;</span><br><span class="line">                t += t1/<span class="number">10</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> c.<span class="built_in">push_back</span>(temp%<span class="number">10</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (t !=<span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (c.<span class="built_in">size</span>()&gt;q+h) &#123;</span><br><span class="line">                <span class="type">int</span> t1 = t%<span class="number">10</span>+c[q+h];</span><br><span class="line">                c[q+h] = t1%<span class="number">10</span>;</span><br><span class="line">                t = t1/<span class="number">10</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> c.<span class="built_in">push_back</span>(t%<span class="number">10</span>),t/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        h++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">reverse</span>(c.<span class="built_in">begin</span>(),c.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> flag = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> i:c) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i == <span class="number">0</span>&amp;&amp;flag) &#123;</span><br><span class="line">            flag = <span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            cout&lt;&lt;i;</span><br><span class="line">            flag = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (flag) &#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://estyzx.github.io/2024/12/08/luogu-P1601/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -192,7 +288,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-12-08 20:21:45 / 修改时间：21:16:17" itemprop="dateCreated datePublished" datetime="2024-12-08T20:21:45+08:00">2024-12-08</time>
+      <time title="创建时间：2024-12-08 20:21:45 / 修改时间：21:19:26" itemprop="dateCreated datePublished" datetime="2024-12-08T20:21:45+08:00">2024-12-08</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -950,102 +1046,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://estyzx.github.io/2024/11/25/pta5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="EstyZhong">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YuanFang的路">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | YuanFang的路">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/11/25/pta5/" class="post-title-link" itemprop="url">指针扩展 PTA题目</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-11-25 22:41:23 / 修改时间：23:06:53" itemprop="dateCreated datePublished" datetime="2024-11-25T22:41:23+08:00">2024-11-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%A2%98%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">题目</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>目录</p>
-<ul>
-<li><a href="/2024/11/25/pta5/#%E6%8C%87%E9%92%88%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2">指针——数据交换</a></li>
-<li><a href="/2024/11/25/pta5/#%E7%BB%99%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F%EF%BC%8C%E4%BD%BF%E6%95%B0%E7%BB%84%E4%BB%8E%E5%B0%8F%E5%88%B0%E5%A4%A7%E6%8E%92%E5%88%97">给数组排序，使数组从小到大排列</a></li>
-<li><a href="/2024/11/25/pta5/#%E6%B1%82%E4%B8%80%E7%BB%84%E6%95%B0%E4%B8%AD%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC%E5%8F%8A%E6%9C%80%E5%A4%A7%E5%80%BC">求一组数中的平均值及最大值</a></li>
-<li><a href="/2024/11/25/pta5/#%E7%A7%BB%E5%8A%A8%E5%AD%97%E6%AF%8D">移动字母</a></li>
-<li><a href="/2024/11/25/pta5/#%E5%88%A4%E6%96%AD%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2">判断回文字符串</a></li>
-<li><a href="/2024/11/25/pta5/#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE">二分查找</a></li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/25/pta5/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
