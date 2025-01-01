@@ -76,4 +76,6 @@ void merge(vector<int>& nums, int left, int mid, int right){
 
 
 ## 代码实现
-[实现代码](./merge_sort.cpp)
+[实现代码 cpp](./merge_sort.cpp)
+
+[实现代码 python](./merge_sort.py)
