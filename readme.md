@@ -3,8 +3,8 @@
 
 # 目录
 
-## 1. 洛谷
+ 1. [洛谷](./luogu/readme.md)
 
-## 2. PTA
+ 2. PTA
 
-## 3. Leetcode
+ 3. Leetcode
