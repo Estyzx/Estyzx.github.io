@@ -9,6 +9,30 @@
 2. 排序：对每个子数组进行排序
 3. 合并：将排序后的子数组合并成一个有序数组
 
+伪代码（AI生成）：
+```text
+归并排序(arr, left, right):
+    if left < right:
+        mid = (left + right) // 2
+        归并排序(arr, left, mid)      // 对左半部分排序
+        归并排序(arr, mid + 1, right) // 对右半部分排序
+        合并(arr, left, mid, right)   // 合并两个有序部分
+
+合并(arr, left, mid, right):
+    创建两个临时数组 L 和 R，分别存储左半部分和右半部分
+    将 arr 中的数据复制到 L 和 R 中
+    i = 0, j = 0, k = left
+    while i < L的长度 and j < R的长度:
+        if L[i] <= R[j]:
+            arr[k] = L[i]
+            i++
+        else:
+            arr[k] = R[j]
+            j++
+        k++
+    将 L 中剩余的元素（如果有）复制到 arr
+    将 R 中剩余的元素（如果有）复制到 arr
+```
 ### 分割
 
 ```cpp
