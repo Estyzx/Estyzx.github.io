@@ -8,3 +8,4 @@
 - [归并排序](./merge.md)
 - [冒泡排序](./bubble.md)
 - [选择排序](./selection.md)
+- [快速排序](./quick.md)
