@@ -5,5 +5,6 @@
 
  1. 刷题
     - [洛谷](./luogu/readme.md)
+    - [LeetCode](./leetcode/readme.md)
 
  2. [学习](./study/readme.md)
