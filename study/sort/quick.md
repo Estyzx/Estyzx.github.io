@@ -56,3 +56,5 @@ void quick_sort(vector<int> &nums, int l, int r) {
 
 ## 代码实现
 [quick.cpp](./quick_sort.cpp)
+
+[quick.py](./quick_sort.py)
