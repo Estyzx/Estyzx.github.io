@@ -1,4 +1,4 @@
 # Leetcode 刷题记录
 
 ## 目录
-- [二分查找](./binary_search/readme.md)
+- [二分查找](./array/binary_search.md)
